@@ -24,19 +24,19 @@
 
 </style>
 <!-- Кнопка для открытия окна -->
-<button onclick="showPopup()">Открыть окно регистрации</button>
+<button onclick="showPopup()">Get KEY</button>
 
 <!-- Окно регистрации -->
 <div id="popup-overlay">
   <div id="popup">
     <h3>Регистрация</h3>
     <!-- Форма регистрации -->
-    <form>
-      <label for="username">Имя:</label><br>
-      <input type="text" id="username" name="username"><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br>
-      <button type="submit">Зарегистрироваться</button>
+    <form method="post" action="getKey.php">
+      <label for="email">Login:</label><br>
+      <input type="email" id="email" name="userlogin"><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br>
+      <button type="submit">Get KEY</button>
     </form>
     <!-- Кнопка закрытия -->
     <button onclick="hidePopup()">Закрыть</button>
